@@ -31,9 +31,9 @@ available_models = {"ChatGPT-3.5": "gpt-3.5-turbo","GPT-3": "text-davinci-003",}
 if "datasets" not in st.session_state:
     datasets = {}
     # Preload datasets
-    datasets["Data"] = pd.read_csv("data.csv")
-    datasets["Crime"] =pd.read_csv("crime_data_2019.csv")
-    datasets["Population"] =pd.read_csv("population.csv")
+    datasets["Data"] = pd.read_csv("example1.csv")
+    datasets["Crime"] =pd.read_csv("example2.csv")
+    datasets["Population"] =pd.read_csv("example3.csv")
     
     st.session_state["datasets"] = datasets
 else:
