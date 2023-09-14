@@ -42,16 +42,6 @@ with st.sidebar:
     # First we want to choose the dataset, but we will fill it with choices once we've loaded one
     dataset_container = st.empty()
 
-
-
-
-
-
-
-
-
-
-
     # Add facility to upload a dataset
 
 
@@ -62,28 +52,10 @@ with st.sidebar:
         file_name = uploaded_file.name[:-4].capitalize()
         datasets[file_name] = pd.read_csv(uploaded_file)
         # Default for the radio buttons
-        index_no = len(datasets)-1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # Radio buttons for dataset choice
-    #chosen_dataset = dataset_container.radio(":bar_chart: Choose your data:",datasets.keys(),index=index_no)
+        index_no = len(datasets)-
 
 #langchain code
-key=os.environ["OPENAI_API_KEY"] = "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"
+key=os.environ["OPENAI_API_KEY"] = ""
 
 def prepare_Documents(input_Documents):
     # We need to split the text that we read into smaller chunks so that during information retreival we don't hit the
@@ -150,8 +122,6 @@ if datasets :
             st.subheader(dataset_name)
             st.dataframe(datasets[dataset_name],hide_index=True)
 
-
-        
 
 # Insert footer to reference dataset origin  
 footer="""<style>.footer {position: fixed;left: 0;bottom: 0;width: 100%;text-align: center;}</style><div class="footer">
