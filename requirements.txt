@@ -1,0 +1,18 @@
+!apt-get install pkg-config -y
+!apt-get update && apt-get install git -y
+!pip install langchain
+!pip install openai
+!pip install PyPDF2
+!pip install faiss-cpu
+!pip install tiktoken
+!pip install html2text
+!pip install markdown
+!pip install openai
+!pip install unstructured
+!pip install pdf2image
+!pip install pytesseract
+!pip install chromadb
+!pip install tesseract
+!pip install pypdf
+!pip install streamlit
+!pip install pandas
