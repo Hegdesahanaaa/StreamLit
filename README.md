@@ -7,7 +7,7 @@ interface, Langchain to process NL Using LLM (OpenAI) .
 **How to run a streamlit app?**
 streamlit run filename.py 
 
---This would open you app on `http://localhost:8501`
+--This would open your app on `http://localhost:8501`
 
 Yayy!! Now you can upload & query your file and LLM will answer you.
 
